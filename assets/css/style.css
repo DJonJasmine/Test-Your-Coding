@@ -181,11 +181,7 @@ p {
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 45px;
-    }
-   
-    a
- {
-        margin-left: 50px;
+        margin-bottom: 50px;
     }
    
     p {
@@ -195,16 +191,22 @@ p {
         margin-left: 200px;
         line-height: 25px;
     }
+
+    .grid-container {
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-left: 600px;
+    }
 }
 
 
 /* Large smartphones */
 @media screen and (max-width: 768px) {
-    a
- {
-        margin-left: 20px;
+    a {
+        margin-left: 5px;
     }
-    
     p {
         margin-top: 20px;
         margin-right: 90px;
@@ -212,21 +214,35 @@ p {
         line-height: 25px;
     }
 
+    .btn {
+        margin-left: 500px;
+
+    }
+
 }
 
 /* Small smartphones */
 @media screen and (max-width: 576px) {
-    a
- {
-        margin-left: 20px;
-    }    
-
+    
     p {
         margin-top: 25px;
         margin-right: 50px;
         margin-left: 50px;
         line-height: 25px;
     }
+
+    .grid-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    .grid-2 {
+        margin-left: 5px;
+    }
+
 
     .btn {
         margin-left: 240px;
