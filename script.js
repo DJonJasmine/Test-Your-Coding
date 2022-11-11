@@ -1,8 +1,20 @@
+/*
+* TIMER WITH 2 MINS STARTS AFTER BUTTON CLICK
+* 10 QUESTION QUIZ
+* EACH CLICK PROMPTS NEW QUESTION
+*
+*
+*/
+ // Timer creation
+let timer = document.getElementById('timer');
 
+function countdown() {
+    let timerInterval = setInterval(function() {
+        
+    })
+}
 
-
-
-var animateButton = function(e) {
+let animateButton = function(e) {
 
     e.preventDefault;
     //reset animation
@@ -14,8 +26,8 @@ var animateButton = function(e) {
     },700);
   };
   
-  var bubblyButtons = document.getElementsByClassName("btn");
+  let bubblyButtons = document.getElementsByClassName("btn");
   
-  for (var i = 0; i < bubblyButtons.length; i++) {
+  for (let i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }

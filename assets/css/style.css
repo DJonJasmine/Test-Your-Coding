@@ -12,6 +12,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-top: 200px;
+    font-variant: small-caps;
 }
 
 a,
@@ -55,7 +56,7 @@ p {
     background-color: #19b4e4;
     padding: 3px;
 }
-
+ /* Button design and animation from onaircode.com */
 .btn{
     text-transform: uppercase;
     font-family: 'Helvetica', 'Arial', sans-serif;
