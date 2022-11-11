@@ -9,32 +9,61 @@ header {
 }
 
 h1 {
-    text-align: center;
-    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
 }
 
-h2 {
+a,
+h2{
+    font-variant: small-caps;
     font-size: 20px;
     font-weight: normal;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 p {
     display: block;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 600px;
+    margin-right: 600px;
     font-weight: 500;
     line-height: 20px;
 }
 
+.grid-container {
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-1 {
+    grid-column-start: 1;
+}
+
+.view-highscores {
+    color: black;
+}
+
+.view-highscores:hover {
+    box-shadow: 0 5px 25px #05c3fdb6;
+    cursor: pointer;
+    background-color: #19b4e4;
+    color: #fff;
+    border-radius: 4px;
+    border-width: 800px;
+}
+
 .btn{
+    text-transform: uppercase;
     font-family: 'Helvetica', 'Arial', sans-serif;
     display: inline-block;
     font-size: 16px;
     padding: 16px 32px;
     margin-top: 100px;
     margin-bottom: 60px;
-    margin-left: 450px;
+    margin-left: 850px;
     -webkit-appearance: none;
     appearance: none;
     background-color: #19b4e4;
@@ -118,7 +147,7 @@ p {
     display: block;
     animation: topBubbles ease-in-out 0.75s forwards;
 }
-.btn.btn.animate::after{
+.btn.animate::after{
     display: block;
     animation: bottomBubbles ease-in-out 0.75s forwards;
 }
@@ -154,7 +183,8 @@ p {
         font-size: 45px;
     }
    
-    h2 {
+    a
+ {
         margin-left: 50px;
     }
    
@@ -170,7 +200,8 @@ p {
 
 /* Large smartphones */
 @media screen and (max-width: 768px) {
-    h2 {
+    a
+ {
         margin-left: 20px;
     }
     
@@ -180,11 +211,13 @@ p {
         margin-left: 90px;
         line-height: 25px;
     }
+
 }
 
 /* Small smartphones */
 @media screen and (max-width: 576px) {
-    h2 {
+    a
+ {
         margin-left: 20px;
     }    
 
@@ -193,5 +226,9 @@ p {
         margin-right: 50px;
         margin-left: 50px;
         line-height: 25px;
+    }
+
+    .btn {
+        margin-left: 240px;
     }
 }
