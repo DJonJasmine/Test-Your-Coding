@@ -46,8 +46,65 @@ start.addEventListener('click', function() {
     timerStart();
 });
 
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+// Variables for questions and navigation
+let quizQuestions = document.getElementById('questions');
+let userChoices = document.getElementById('choices');
+let userResults = document.getElementById('results')
+let userScore = document.getElementById('user-score')
 
+let questions = [ 
+    {
+    question: 'foo bar foo bar',
+    answers: [
+        {'choice-1': 'js'},
+        {'choice:-2': 'jaksjsk'},
+        {'choice-3': 'java'},
+        {'choice-4': 'javascript'},
+    ],
+    correctAnswer: 'choice-4'
+},
+{
+
+    question: 'foo bar foo bar',
+    answers: [
+        {choice: 'js'},
+        {choice: 'jaksjsk'},
+        {choice: 'java'},
+        {choice: 'javascript'},
+
+    ]
+},
+
+{
+
+    question: 'foo bar foo bar',
+    answers: [
+        {choice: 'js'},
+        {choice: 'jaksjsk'},
+        {choice: 'java'},
+        {choice: 'javascript'},
+
+    ]
+},
+
+{
+
+    question: 'foo bar foo bar',
+    answers: [
+        {choice: 'js'},
+        {choice: 'jaksjsk'},
+        {choice: 'java'},
+        {choice: 'javascript'},
+
+    ]
+}
+]
+
+userChoices.addEventListener(click, 'choices');
+
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+   
 	function showQuestions(questions, quizContainer){
 		// code will go here
 	}
