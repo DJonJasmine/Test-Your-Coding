@@ -25,10 +25,9 @@ let animateButton = function(e) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
-let timer = document.getElementById('timer');
-
-
+// Start button function with timer
 start.addEventListener('click', function() {
+    let timer = document.getElementById('timer');
     let timeLeft = 60;
     function timerStart() {
         let timerInterval = setInterval(function() {
