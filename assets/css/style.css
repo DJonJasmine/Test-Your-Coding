@@ -25,10 +25,11 @@ h2{
 
 p {
     display: block;
+    font-size: 20px;
     margin-left: 600px;
     margin-right: 600px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 .grid-container {
