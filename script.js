@@ -1,7 +1,5 @@
 /*
-* TIMER WITH 2 MINS STARTS AFTER BUTTON CLICK
-* 10 QUESTION QUIZ
-* EACH CLICK PROMPTS NEW QUESTION
+* Set Attribute of target elements
 *
 *
 */
@@ -19,7 +17,7 @@ let animateButton = function(e) {
       },700);
     };
   
-  let bubblyButtons = document.getElementsByClassName("btn");
+  let bubblyButtons = document.getElementsByClassName('btn');
   
   for (let i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
@@ -48,23 +46,37 @@ start.addEventListener('click', function() {
 
 // Variables for questions and navigation
 let quizQuestions = document.getElementById('questions');
+let nextBtn = document.getElementById('next');
 let userChoices = document.getElementById('choices');
-let userResults = document.getElementById('results')
-let userScore = document.getElementById('user-score')
+let submitBtn = document.getElementById('submit');
+let userResults = document.getElementById('results');
+let userScore = document.getElementById('user-score');
+let restartBtn = document.getElementById('restart');
+
+let currentQuestion = 0;
+let score = 0;
 
 let questions = [ 
     {
-    question: 'foo bar foo bar',
+    question: 'What is JavaScript?',
     answers: [
-        {'choice-1': 'js'},
-        {'choice:-2': 'jaksjsk'},
-        {'choice-3': 'java'},
-        {'choice-4': 'javascript'},
+        {choice: 'A new sport', answer: false},
+        {choice: 'A play', answer: false},
+        {choice: 'A new starbucks drink', answer: false},
+        {choice: 'A programming language', answer: true},
     ],
-    correctAnswer: 'choice-4'
 },
 {
+    question: 'When to use console.log()?',
+    answers: [
+        {choice: 'js', answer: false},
+        {choice: 'jaksjsk', answer: true},
+        {choice: 'java', answer: false},
+        {choice: 'javascript', answer: false},
 
+    ]
+},
+{
     question: 'foo bar foo bar',
     answers: [
         {choice: 'js'},
@@ -74,52 +86,23 @@ let questions = [
 
     ]
 },
-
 {
-
     question: 'foo bar foo bar',
     answers: [
         {choice: 'js'},
         {choice: 'jaksjsk'},
         {choice: 'java'},
         {choice: 'javascript'},
-
     ]
 },
-
 {
-
     question: 'foo bar foo bar',
     answers: [
         {choice: 'js'},
         {choice: 'jaksjsk'},
         {choice: 'java'},
-        {choice: 'javascript'},
-
+        {choice: 'javascript'}, 
     ]
 }
 ]
-
-userChoices.addEventListener(click, 'choices');
-
-
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-   
-	function showQuestions(questions, quizContainer){
-		// code will go here
-	}
-
-	function showResults(questions, quizContainer, resultsContainer){
-		// code will go here
-	}
-
-	// show the questions
-	showQuestions(questions, quizContainer);
-
-	// when user clicks submit, show results
-	submitButton.onclick = function(){
-		showResults(questions, quizContainer, resultsContainer);
-	}
-}
-
 
