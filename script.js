@@ -1,8 +1,18 @@
 /*
-* Set Attribute of target elements
-*
+* When press start first question should come up!!!!!
 *
 */
+// Variables for questions and navigation
+let quizQuestions = document.getElementById('questions');
+let nextBtn = document.getElementById('next');
+let userChoices = document.getElementById('option');
+let submitBtn = document.getElementById('submit');
+let userResults = document.getElementById('results');
+let userScore = document.getElementById('user-score');
+let restartBtn = document.getElementById('restart');
+
+let currentQuestion = 0;
+let score = 0;
 
 // Button animation 
 let animateButton = function(e) {
@@ -23,8 +33,8 @@ let animateButton = function(e) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
-// Start button function with timer
-start.addEventListener('click', function() {
+// Start button function with timer and question prompt
+start.addEventListener('click', function(e) {
     let timer = document.getElementById('timer');
     let timeLeft = 60;
     function timerStart() {
@@ -42,19 +52,9 @@ start.addEventListener('click', function() {
         }, 1000);
     }
     timerStart();
+
 });
 
-// Variables for questions and navigation
-let quizQuestions = document.getElementById('questions');
-let nextBtn = document.getElementById('next');
-let userChoices = document.getElementById('choices');
-let submitBtn = document.getElementById('submit');
-let userResults = document.getElementById('results');
-let userScore = document.getElementById('user-score');
-let restartBtn = document.getElementById('restart');
-
-let currentQuestion = 0;
-let score = 0;
 
 let questions = [ 
     {
@@ -106,3 +106,7 @@ let questions = [
 }
 ]
 
+
+
+submitBtn.addEventListener('click', submit);
+restartBtn.addEventListener('click', restart);

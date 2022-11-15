@@ -59,9 +59,28 @@ p {
     padding: 3px;
 }
 
+.option {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px 32px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 500px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #19b4e4;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 5px 25px #05c3fdb6;
+}
+
 /* Button design and animation from onaircode.com */
-.btn,
-.option, 
+.btn, 
 .nextBtn,
 .restartBtn,
 .submitBtn {
