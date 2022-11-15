@@ -27,24 +27,25 @@
             <button id="start" class="btn">Start</button>
         </div>
 
-        <div id="questions"></div>
+        <div id="questions" class="questions"></div>
        
-        <div class="choices">
-            <button class="option" id="option1" data-state="hidden"></button>
-            <button class="option" id="option2" data-state="hidden"></button>
-            <button class="option" id="option3" data-state="hidden"></button>
-            <button class="option" id="option4" data-state="hidden"></button>
+        <div class="answers" id="answers">
+            <button class="option" id="A" data-state="hidden"></button>
+            <button class="option" id="B" data-state="hidden"></button>
+            <button class="option" id="C" data-state="hidden"></button>
+            <button class="option" id="D" data-state="hidden"></button>
         </div>
-        
-        <div class="navigation">
-            <button class="nextBtn" id="next">Next</button>
+       
+        <div id="Highscores">
+            <h3>Great Job!</h3>
+            <h4 id="score"></h4>
+            <h5>Add your name for your highscore</h5>
+            <input type="text" id="yourName">
             <button class="submitBtn" id="submit">Submit</button>
             <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
         </div>
        
-        <div id="results"></div>
-       
-        <div id="score">
+   
     </main>
 
 

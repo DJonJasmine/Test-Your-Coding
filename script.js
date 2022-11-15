@@ -3,13 +3,17 @@
 *
 */
 // Variables for questions and navigation
-let quizQuestions = document.getElementById('questions');
-let nextBtn = document.getElementById('next');
+let start = document.getElementById('start');
+let quizQuestions = document.getElementById('question');
+let choiceA = document.getElementById('A');
+let choiceB = document.getElementById('B');
+let choiceC = document.getElementById('C');
 let userChoices = document.getElementById('option');
 let submitBtn = document.getElementById('submit');
 let userResults = document.getElementById('results');
 let userScore = document.getElementById('user-score');
 let restartBtn = document.getElementById('restart');
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -55,58 +59,22 @@ start.addEventListener('click', function(e) {
 
 });
 
-
-let questions = [ 
+// Create questions
+let questions = [
     {
-    question: 'What is JavaScript?',
-    answers: [
-        {choice: 'A new sport', answer: false},
-        {choice: 'A play', answer: false},
-        {choice: 'A new starbucks drink', answer: false},
-        {choice: 'A programming language', answer: true},
-    ],
-},
-{
-    question: 'When to use console.log()?',
-    answers: [
-        {choice: 'js', answer: false},
-        {choice: 'jaksjsk', answer: true},
-        {choice: 'java', answer: false},
-        {choice: 'javascript', answer: false},
+        question : "What is Javascript?",
+        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
 
-    ]
-},
-{
-    question: 'foo bar foo bar',
-    answers: [
-        {choice: 'js'},
-        {choice: 'jaksjsk'},
-        {choice: 'java'},
-        {choice: 'javascript'},
+        answer: 'a programming language'
+    },{
+        question : "What is Javascript?",
+        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
 
-    ]
-},
-{
-    question: 'foo bar foo bar',
-    answers: [
-        {choice: 'js'},
-        {choice: 'jaksjsk'},
-        {choice: 'java'},
-        {choice: 'javascript'},
-    ]
-},
-{
-    question: 'foo bar foo bar',
-    answers: [
-        {choice: 'js'},
-        {choice: 'jaksjsk'},
-        {choice: 'java'},
-        {choice: 'javascript'}, 
-    ]
-}
-]
+        answer: 'a programming language'
+    },{
+        question : "What is Javascript?",
+        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
 
-
-
-submitBtn.addEventListener('click', submit);
-restartBtn.addEventListener('click', restart);
+        answer: 'a programming language'
+    }
+];
