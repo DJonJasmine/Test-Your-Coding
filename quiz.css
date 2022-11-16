@@ -1,3 +1,19 @@
+* {
+    font-family:'Helvetica', 'Arial', sans-serif;
+    font-variant: small-caps;
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-weight: normal;
+    justify-content: space-around;
+}
+
+
 .choice {
     text-transform: uppercase;
     display: flex;

@@ -9,12 +9,18 @@
 </head>
 <body>
     <div id="quiz">
-        <div id="score-area">
-            <p class="score-text"></p>
-            <h1 id="score">0</h1>
-        </div>
+        <div class="grid-container">
+        
+            <div id="score-area">
+                <h1 class="grid-1" id="score">0</h1>
+            </div>
 
-        <h1 id="question">What is the answer to this question?</h1>
+            <h2 class="grid-2" id="timer">timer</h2>
+
+        </div>
+        
+
+        <h3 id="question">What is the answer to this question?</h3>
        
         <div class="choice">
             <p class="choice-letters">A.</p>
@@ -37,16 +43,6 @@
         </div>
         
     </div>
-    
-    <div>
-        <ul>
-            <li class="answers" id="answers"></li>
-            <li class="answers" id="answers"></li>
-            <li class="answers" id="answers"></li>
-            <li class="answers" id="answers"></li>
-        </ul>
-    </div>
-
        
     <div id="highscores">
         <h3>Great Job!</h3>

@@ -3,46 +3,34 @@
 *
 */
 // Variables for questions and navigation
-let start = document.getElementById('start');
-let quizInfo = document.getElementById('quizInfo');
-let quizParagraph = document.getElementById('infoParagraph')
-let quizQuestions = document.getElementById('questions');
-let answers = Array.from(document.getElementsByClassName('answers'));
-let submitBtn = document.getElementById('submit');
-let userResults = document.getElementById('highscores');
-let userScore = document.getElementById('user-score');
-let restartBtn = document.getElementById('restart');
+let start = document.querySelector('start')
+let choices = Array.from(document.querySelectorAll('.choice-text'))
+let scoreText = document.querySelector('#score')
+let question =document.querySelector('#question')
+
+let userResults = document.querySelector('highscores')
+let restartBtn = document.querySelector('restart')
 
 
 // Start button function with timer and question prompt
 start.addEventListener('click', function(e) {
-    let timer = document.getElementById('timer');
-    let timeLeft = 60;
+    let timer = document.querySelector('timer')
+    let timeLeft = 60
     function timerStart() {
         let timerInterval = setInterval(function() {
               timeLeft--;
 
-              timer.textContent = 'Timer: ' + timeLeft;
+              timer.textContent = 'Timer: ' + timeLeft
 
                 if (timeLeft < 0) {
-                  clearInterval(timerInterval);
-                  timeLeft = 0;
-                  endQuiz();
+                  clearInterval(timerInterval)
+                  timeLeft = 0
+                  endQuiz()
                 }
 
-        }, 1000);
+        }, 1000)
     }
-    timerStart();
-
-    function startQuiz() {
-        start.style.display = 'none';
-        quizInfo.style.display = 'none';
-        quizParagraph.style.display = 'none';
-        timerStart();
-        timer.textContent = 'Timer: ' + timeLeft;
-        startQuestions();
-    }
-    startQuiz();
+    timerStart()
     
 
 });
