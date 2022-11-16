@@ -1,9 +1,8 @@
 * {
     font-family:'Helvetica', 'Arial', sans-serif;
     font-variant: small-caps;
-
+    font-weight: normal;
 }
-
 
 .grid-container {
     display: grid;
