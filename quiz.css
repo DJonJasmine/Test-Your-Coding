@@ -1,8 +1,11 @@
 .choice {
     text-transform: uppercase;
     display: flex;
+    width: 500px;
     font-size: 16px;
     padding: 16px 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
     margin-bottom: 60px;
     -webkit-appearance: none;
@@ -19,4 +22,63 @@
     box-shadow: 0 6px 22px 0 #05c3fdb6;
     transform: scale(1.01);
     transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+
+.choice-letters {
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+.choice-text {
+    padding-top: 20px;
+}
+
+.correct {
+    background:green;
+}
+
+.incorrect {
+    background: red;
+}
+
+#score-area {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 992px) {
+    .choice {
+        width: max-content;
+
+    }
+
+    .choice-text {
+        padding-left: 0;
+    }
+
+}
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+    .choice {
+      width: max-content;
+        
+    }
+    .choice-text {
+        padding-left: 0;
+    }
+
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+    
+    .choice {
+        width: max-content;
+
+        
+    }
+
+    .choice-text {
+        padding-left: 0;
+    }
 }
