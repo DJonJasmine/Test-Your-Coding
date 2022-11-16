@@ -76,7 +76,7 @@ start.addEventListener('click', function(e) {
 let questions = [
     {
         question : "What is Javascript?",
-        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
+        userChoices: ['a drink', 'a programming language', 'a animal', 'a console log'],
 
         answer: 1
     },{
@@ -86,7 +86,7 @@ let questions = [
         answer: 3
     },{    
         question : "What is a = in Javascript?",
-        userChoices: ['a assignment operator', 'a programming language', 'a monkey', 'a console log'],
+        userChoices: ['a assignment operator', 'a programming language', 'a cat', 'a console log'],
 
         answer: 0
 }];
