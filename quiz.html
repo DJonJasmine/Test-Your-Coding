@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
@@ -16,6 +15,7 @@
         </div>
 
         <div id="question">What is the answer to this question?</div>
+       
         <div class="choice">
             <p class="choice-letters">A</p>
             <p class="choice-text" data-number="1">Choice1</p>
@@ -36,12 +36,8 @@
             <p class="choice-text" data-number="4">Choice4</p>
         </div>
         
-       
     </div>
     
-    <script src="quiz.js"></script>
-    
-       
     <div>
         <ul>
             <li class="answers" id="answers"></li>
@@ -50,18 +46,18 @@
             <li class="answers" id="answers"></li>
         </ul>
     </div>
+
+       
+    <div id="highscores">
+        <h3>Great Job!</h3>
+        <h4 id="score"></h4>
+        <h5>Add your name for your highscore</h5>
+        <input type="text" id="yourName">
+        <button class="submitBtn" id="submit">Submit</button>
+        <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
+    </div>
+
+    <script src="quiz.js"></script>
     
 </body>
 </html>
-
-
-
-   
-<div id="highscores">
-    <h3>Great Job!</h3>
-    <h4 id="score"></h4>
-    <h5>Add your name for your highscore</h5>
-    <input type="text" id="yourName">
-    <button class="submitBtn" id="submit">Submit</button>
-    <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
-</div>

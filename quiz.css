@@ -1,0 +1,22 @@
+.choice {
+    text-transform: uppercase;
+    display: flex;
+    font-size: 16px;
+    padding: 16px 15px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #19b4e4;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    position: relative;
+}
+
+.choice:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 22px 0 #05c3fdb6;
+    transform: scale(1.01);
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
