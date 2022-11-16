@@ -4,19 +4,19 @@
 */
 // Variables for questions and navigation
 let start = document.getElementById('start');
-let quizQuestions = document.getElementById('question');
-let choiceA = document.getElementById('A');
-let choiceB = document.getElementById('B');
-let choiceC = document.getElementById('C');
-let userChoices = document.getElementById('option');
+let quizInfo = document.getElementById('quizInfo');
+let quizParagraph = document.getElementById('infoParagraph')
+let quizQuestions = document.getElementById('questions');
+let answers = Array.from(document.getElementsByClassName('answers'));
 let submitBtn = document.getElementById('submit');
-let userResults = document.getElementById('results');
+let userResults = document.getElementById('highscores');
 let userScore = document.getElementById('user-score');
 let restartBtn = document.getElementById('restart');
 
 
-let currentQuestion = 0;
-let score = 0;
+window.onload = function(){document.getElementById('submit').style.display = "none"; };
+window.onload = function(){document.getElementById('restart').style.display = "none"; };
+window.onload = function(){document.getElementById('highscores').style.display = "none"; };
 
 // Button animation 
 let animateButton = function(e) {
@@ -37,6 +37,7 @@ let animateButton = function(e) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
+
 // Start button function with timer and question prompt
 start.addEventListener('click', function(e) {
     let timer = document.getElementById('timer');
@@ -47,17 +48,29 @@ start.addEventListener('click', function(e) {
 
               timer.textContent = 'Timer: ' + timeLeft;
 
-                if (timeLeft === 0) {
+                if (timeLeft < 0) {
                   clearInterval(timerInterval);
-                  timer.textContent = 'Times Up!';
-                  displayMessage();
+                  timeLeft = 0;
+                  endQuiz();
                 }
 
         }, 1000);
     }
     timerStart();
 
+    function startQuiz() {
+        start.style.display = 'none';
+        quizInfo.style.display = 'none';
+        quizParagraph.style.display = 'none';
+        timerStart();
+        timer.textContent = 'Timer: ' + timeLeft;
+        startQuestions();
+    }
+    startQuiz();
+    
+
 });
+
 
 // Create questions
 let questions = [
@@ -65,16 +78,19 @@ let questions = [
         question : "What is Javascript?",
         userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
 
-        answer: 'a programming language'
+        answer: 1
     },{
-        question : "What is Javascript?",
-        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
+        question : "What are the data types?",
+        userChoices: ['boolean', 'string', 'null', 'all the above'],
 
-        answer: 'a programming language'
-    },{
-        question : "What is Javascript?",
-        userChoices: ['a drink', 'a programming language', 'a monkey', 'a console log'],
+        answer: 3
+    },{    
+        question : "What is a = in Javascript?",
+        userChoices: ['a assignment operator', 'a programming language', 'a monkey', 'a console log'],
 
-        answer: 'a programming language'
-    }
-];
+        answer: 0
+}];
+
+function showQuestion() {
+
+}

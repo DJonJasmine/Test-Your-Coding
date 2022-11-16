@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Coding Quiz</h1>
+        <h1 class="quizInfo" id="quizInfo">Coding Quiz</h1>
         <div class="grid-container">
             <nav class="grid-1">
                 <a class="view-highscores" href="#view-highscores">View Highscores</a>
@@ -18,37 +18,34 @@
         </div>
     </header>
 
-    <main>
-        <p>Welcome to the Coding Quiz. Test your knowledge
-           to see if you have what it takes to become a scholar in JavaScript! This test will have a timer of 60 seconds, displaying 10 questions. Each question is worth 10 points. Do you have what it takes?
-        </p>
+    <p class="infoParagraph" id="infoParagraph"> Welcome to the Coding Quiz. Test your knowledge
+        to see if you have what it takes to become a scholar in JavaScript! This test will have a timer of 60 seconds. Careful, each wrong answer will reduce the timer by 10 seconds. Do you have what it takes?
+    </p>
 
-        <div class="card-footer">
-            <button id="start" class="btn">Start</button>
-        </div>
+    <div class="card-footer">
+        <button class="btn" id="start">Start</button>
+    </div>
 
-        <div id="questions" class="questions"></div>
+    <div class="questions" id="questions"></div>
        
-        <div class="answers" id="answers">
-            <button class="option" id="A" data-state="hidden"></button>
-            <button class="option" id="B" data-state="hidden"></button>
-            <button class="option" id="C" data-state="hidden"></button>
-            <button class="option" id="D" data-state="hidden"></button>
-        </div>
+    <div>
+        <ul>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+        </ul>
+    </div>
        
-        <div id="Highscores">
-            <h3>Great Job!</h3>
-            <h4 id="score"></h4>
-            <h5>Add your name for your highscore</h5>
-            <input type="text" id="yourName">
-            <button class="submitBtn" id="submit">Submit</button>
-            <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
-        </div>
+    <div id="highscores">
+        <h3>Great Job!</h3>
+        <h4 id="score"></h4>
+        <h5>Add your name for your highscore</h5>
+        <input type="text" id="yourName">
+        <button class="submitBtn" id="submit">Submit</button>
+        <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
+    </div>
        
-   
-    </main>
-
-
     <script src="script.js"></script>
 </body>
 </html>
