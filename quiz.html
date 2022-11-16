@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="quiz">
+        <div id="score-area">
+            <p class="score-text"></p>
+            <h1 id="score">0</h1>
+        </div>
+
+        <div id="question">What is the answer to this question?</div>
+        <div class="choice">
+            <p class="choice-letters">A</p>
+            <p class="choice-text" data-number="1">Choice1</p>
+        </div>
+
+        <div class="choice">
+            <p class="choice-letters">B</p>
+            <p class="choice-text" data-number="2">Choice2</p>
+        </div>
+
+        <div class="choice">
+            <p class="choice-letters">C</p>
+            <p class="choice-text" data-number="3">Choice3</p>
+        </div>
+
+        <div class="choice">
+            <p class="choice-letters">D</p>
+            <p class="choice-text" data-number="4">Choice4</p>
+        </div>
+        
+       
+    </div>
+    
+    <script src="quiz.js"></script>
+    
+       
+    <div>
+        <ul>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+            <li class="answers" id="answers"></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+
+
+   
+<div id="highscores">
+    <h3>Great Job!</h3>
+    <h4 id="score"></h4>
+    <h5>Add your name for your highscore</h5>
+    <input type="text" id="yourName">
+    <button class="submitBtn" id="submit">Submit</button>
+    <button class="restartBtn" id="restart" data-state="hidden">Try Again?</button>
+</div>

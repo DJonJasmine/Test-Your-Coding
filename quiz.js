@@ -14,30 +14,6 @@ let userScore = document.getElementById('user-score');
 let restartBtn = document.getElementById('restart');
 
 
-window.onload = function(){document.getElementById('submit').style.display = "none"; };
-window.onload = function(){document.getElementById('restart').style.display = "none"; };
-window.onload = function(){document.getElementById('highscores').style.display = "none"; };
-
-// Button animation 
-let animateButton = function(e) {
-
-      e.preventDefault;
-      //reset animation
-      e.target.classList.remove('animate');
-    
-      e.target.classList.add('animate');
-      setTimeout(function(){
-      e.target.classList.remove('animate');
-      },700);
-    };
-  
-  let bubblyButtons = document.getElementsByClassName('btn');
-  
-  for (let i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-}
-
-
 // Start button function with timer and question prompt
 start.addEventListener('click', function(e) {
     let timer = document.getElementById('timer');
