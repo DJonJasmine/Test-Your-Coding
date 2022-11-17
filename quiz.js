@@ -7,8 +7,6 @@ let choices = Array.from(document.querySelectorAll('.choice-text'))
 let scoreText = document.querySelector('#score')
 let question = document.querySelector('#question')
 let timer = document.querySelector('#timer')
-let userResults = document.querySelector('highscores')
-let restartBtn = document.querySelector('restart')
 
 let message = 'Time Is Up!'
 
