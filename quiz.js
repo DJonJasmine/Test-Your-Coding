@@ -19,9 +19,7 @@ function timerStart() {
             displayMessage()
         }
     }, 1000)
-   
-    
-  
+
 }
 
 function displayMessage() {
