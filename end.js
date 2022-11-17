@@ -1,17 +1,13 @@
 let userInitials = document.querySelector('#yourname')
 let submitBtn = document.querySelector('#submit')
 let finalScore = document.querySelector('#finalScore')
-let mostRecentScore = document.querySelector('#mostRecentScore')
+let mostRecentScore = localStorage.getItem('mostRecentScore')
 
 let highscore = JSON.parse(localStorage.getItem('highScore')) || []
 
 let maxHighScores = 5
 
 finalScore.innerText = mostRecentScore
-
-userInitials.addEventListener('keyup', () => {
-    submitBtn.disabled = !userInitials.value
-})
 
 submitBtn = e => {
     e.preventDefault()

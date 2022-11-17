@@ -1,6 +1,4 @@
-/*
-* When press start first question should come up!!!!!
-*/
+
 // Variables for questions and navigation
 let start = document.querySelector('start')
 let choices = Array.from(document.querySelectorAll('.choice-text'))

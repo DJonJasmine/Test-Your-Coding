@@ -6,7 +6,7 @@
 h4 {
     font-size: 25px;
     display: block;
-    margin-top: 200px;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 
@@ -32,6 +32,13 @@ input {
     border-color: #19b4e4;
     background-color: #19b4e4;
     padding: 3px;
+}
+
+.finalScore {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-size: 45px;
 }
 
 .form {
