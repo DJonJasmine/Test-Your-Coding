@@ -9,10 +9,6 @@ let maxHighScores = 5
 
 finalScore.innerText = mostRecentScore
 
-userInitials.addEventListener('keyup', () => {
-    submitBtn.disabled = !userInitials.value
-})
-
 submitBtn = e => {
     e.preventDefault()
 

@@ -1,3 +1,6 @@
+* {
+    font-family:'Helvetica', 'Arial', sans-serif;
+}
 
 
 h4 {
@@ -13,6 +16,22 @@ input {
     font-size: 16px;
     box-shadow: 0 5px 25px #05c3fdb6;
 
+}
+
+.view-highscores {
+    margin-left: 300px;
+    color: black;
+    text-decoration: none;
+}
+
+.view-highscores:hover {
+    box-shadow: 0 5px 25px #05c3fdb6;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    border-color: #19b4e4;
+    background-color: #19b4e4;
+    padding: 3px;
 }
 
 .form {
