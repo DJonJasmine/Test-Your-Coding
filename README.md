@@ -1,8 +1,14 @@
 ## Name
+
 Coding Quiz
 
+
+
 ## Description
+
 This quiz will test your knowledge of Javascript. With 60 seconds on the timer, think fast to click the right answer! Upon finishing the quiz you can save your high score. Can you beat your record?
+
+
 
 ## Badges
 
@@ -11,16 +17,23 @@ This quiz will test your knowledge of Javascript. With 60 seconds on the timer, 
 
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
+<img alt="Screenshot of home page" src="./assets/images/Home-Page.png">
+
+
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+Click the start button to start quiz. You will be prompt to a new page with quiz questions and a timer set of 60 seconds. When clicking on an answer you will get a visual of red and green button to know the result of the answer you have chosen. Once quiz is completed you will be prompt to a page where you can save your high score! To view your initial and high score click on the 'view highscore' button at the top of the page.
+
 
 ## Support
+
 If you come across a bug or just have any feedback, support can be contacted at DJonHarrison94@gmail.com!
 
 
 ## License
+
 MIT License
 
 Copyright (c) 2022 DJonJasmine
