@@ -111,7 +111,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0) {
         localStorage.setItem('mostRecentScore', score)
         // when go through all questions it will end the quiz
-        return window.location.assign('/end.html')
+        return window.location.assign('./end.html')
     }
     // randomize the quiz questions
     let questionIndex = Math.floor(Math.random() * availableQuestions.length)
